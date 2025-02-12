@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Abril Fatface', serif;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #e85234;
+  padding: 10px;
+}
+
+nav .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.nav-content .logo a{
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+}
+
+.nav-content .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.nav-links li a{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Noto Sans', serif;
+  color: white;
+  padding: 10px 4px;
+}
+
+.nav-links li a:hover {
+  background-color: #f2eee9;
+  color: #e85234;
+  border-radius: 10px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-image: linear-gradient(#f2d7d3, #f9b8af)
+   }
+
+
+#projects {
+  width: 100%;
+  padding: 40px;
+  background-color: #f2eee9;
+
+
+}
+.projects-grid {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20vw);
+    grid-gap: 30px;
+  background-color: #f2d7d3;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.welcome-text {
+  width: 100%;
+  margin: auto;
+  color: #e85234;
+  padding: 250px;
+  text-align: center;
+}
+
+.welcome-text h1{
+  font-size: 80px;
+  font-family: 'Abril Fatface', serif;
+  line-height: 80px;
+}
+
+.welcome-text h2 {
+  font-size: 25px;
+  padding: 20px;
+  font-family: 'Noto Sans', serif;
+  font-weight: normal;
+}
+
+.text {
+  padding: 30px 80px;
+}
+
+.text h2 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #e85234;
+}
+
+.text p {
+  font-family: 'Noto Sans', serif;
+  color: #e85234;
+  padding: 10px;
+}
+
+.space {
+  height: 30px
+}
+
+#contact {
+  height: 100vh;
+  width: 100%;
+  background-color: #f9b8af;
+}
+
+.contact-text {
+  width: 100%;
+  margin: auto;
+  color: white;
+  padding: 250px 0 0 ;
+  text-align: center;
+
+}
+
+.contact-text h2 {
+  font-size: 4rem;
+  
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+  max-width: 600px;
+  margin: auto;
+  
+}
+
+.contact-links a{
+  font-size: 30px;
+  color: #e85234;
+}
+
+.contact-links a:hover{
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.welcome-text {
+  width: 100%;
+  margin: auto;
+  padding: 250px 0 0 ;
+  text-align: center;
+
+}
+
+.contact-text {
+  font-size: 1rem;
+}
+
+contact-links {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  max-width: 40px;
+  margin: auto;
+  
+}
+
+.contact-links a{
+  font-size: 20px;
+  color: #e85234;
+}
+  
+}
